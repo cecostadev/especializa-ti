@@ -5,8 +5,4 @@
     @include('site.supports.partials.update-create-form', ['support' => $support])
 </form>
 
-@if ($errors->any())
-    @foreach ($errors->all() as $error)
-       {{ $error }} 
-    @endforeach
-@endif
+<x-alert/>
